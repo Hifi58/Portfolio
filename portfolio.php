@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 
+
 <body>
     <?php include 'navigateur.php' ?>
 </body>
