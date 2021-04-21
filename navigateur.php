@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="navigation.css">
-
 <nav>
 
 <div class="logo">
