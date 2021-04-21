@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 html{
---couleur1: #222222;
---couleur2: #EFE9F4;
+--couleur1: #EFE9F4;
+--couleur2: #222222;
 --couleurhover: #7C90DB;
 --fonttitre: 'Playfair Display', serif;
 --fontsizet: 2.5em;
@@ -15,12 +15,14 @@ body{
     background-color: var(--couleur2);
 }
 
+
+/*navigation*/
+
 nav{
     background-color: var(--couleur1);
     width: 100%;
     display: flex;
     justify-content: space-around;
-    position: fixed;
 }
 
 h1{
@@ -58,4 +60,34 @@ a:hover{
 ul{
     display: flex;
     align-items: center;
+}
+
+@media all and (max-width: 909px) {
+    a{
+        display: none;
+    }
+}
+
+/*header*/
+
+.titre{
+    color: var(--couleur1);
+    font-family: var(--fonttitre);
+    line-height: 3;
+    margin-left: 175px;
+    font-size: 2em;
+}
+
+.rond1,
+.rond2{
+    color: var(--couleur1);
+    border-radius: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.rond1{
+    color: var(--couleur1);
+    width: 250px;
+    height: 250px;
 }
