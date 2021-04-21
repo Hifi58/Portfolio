@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="corps.css">
     <title>Document</title>
 </head>
+
 <body>
     <?php include 'navigateur.php' ?>
 </body>
+
 </html>
