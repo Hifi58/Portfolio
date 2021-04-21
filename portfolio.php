@@ -10,7 +10,9 @@
 
 
 <body>
+
     <?php include 'navigateur.php' ?>
+    
 </body>
 
 </html>
