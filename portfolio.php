@@ -14,9 +14,6 @@
 
     <header>
         <h1 class="titre">Tony Gillet <br/> Développeur web et web mobile junior</h1>
-
-        <div class="rond1"></div>
-        <div class="rond2"></div>
     </header>
 </body>
 
