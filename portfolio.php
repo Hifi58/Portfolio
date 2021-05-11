@@ -13,7 +13,7 @@
     <?php include 'navigateur.php' ?>
 
     <header>
-        <h1 class="titre">Tony Gillet <br/> Développeur web et web mobile junior</h1>
+       
     </header>
 </body>
 
