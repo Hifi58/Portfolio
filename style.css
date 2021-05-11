@@ -15,14 +15,21 @@ body{
     background-color: var(--couleur2);
 }
 
+/*---------------------------
 
-/*navigation*/
+navigation
+
+---------------------------*/
 
 nav{
     background-color: var(--couleur1);
-    width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -53,8 +60,10 @@ a:hover{
 
 ul{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    text-align: left;
 }
+
 
 @media all and (max-width: 909px) {
     a{
@@ -62,5 +71,9 @@ ul{
     }
 }
 
-/*header*/
+/*---------------------------
+
+header
+
+---------------------------*/
 

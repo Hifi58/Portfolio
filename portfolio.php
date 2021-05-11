@@ -10,14 +10,14 @@
 
 
 <body>
-<nav>
 
-<div class="logo">
-    <img href="images/tg.gif" alt="logo">
-</div>
-<div class="container">
+<!--Début de la bar de navigation-->
+
+<nav>
+    <div class="container">
         <div class ="Liens">
             <div class="wrapper">
+            <img src="images/logo.gif" alt="logo"/>
             <ul>
                 <li><a href="#accueil">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -30,6 +30,8 @@
         
     </div>  
 </nav>
+
+<!--Début du header-->
 
     <header>
        
