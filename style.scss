@@ -1,19 +1,58 @@
 /*-------------
 
+Var & font 
+
+-------------*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+$background-color: #222222;
+$button-color: #E9190F;
+$textbut-color: #EFE9F4;
+$nav-color: #EFE9F4;
+$font-button: 'Rubik', sans-serif;
+$font-body: 'Playfair Display', serif;
+
+/*-------------
+
+Page parameters
+
+-------------*/
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $background-color;
+    font-family: $font-body;
+}
+
+/*-------------
+
 Button
 
 -------------*/
 
 .containerpush{
     display: flex;
+    justify-content: center;
+    perspective: 427px;
 
     .wrapperpush{
         justify-content: center;
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        background-color: red;
+        background-color: $button-color;
         display: flex;
+        transform: rotateX(65deg) rotateY(0deg);
+        transform-style: preserve-3d;
+        margin-top: 250px;
+        box-shadow: 0px 12px 0px 0px #9c0f07, 5px 12px 34px 18px #000;
+
+
+        
 
         .textpush{
             position: relative;
@@ -23,12 +62,59 @@ Button
         .push{
             background: none;
             border:none;
-            color: white;
             font-size: 3em;
+            font-family: $font-button;
+            animation: pushbutton 2s ease 0s infinite normal forwards;
+
+            .push2{
+                text-decoration: none;
+                color: $textbut-color;
+            }
+        }
+
+        @keyframes pushbutton {
+            0%,
+            50%,
+            100% {
+              opacity: 1;
+            }
+          
+            25%,
+            75% {
+              opacity: 0;
+            }
+          }
+    }
+}
+
+/*-------------
+
+Navigation
+
+-------------*/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    
+    .wrappernav{
+        display: flex;
+        background-color: $nav-color;
+
+        .boxnav{
+            list-style-type: none;
+            display: flex;
+         
+
+            .linknav{
+                text-decoration: none;
+                color: $background-color;
+            }
         }
     }
 
-   
-
-
+    img{
+        width: 100px;
+        height: 100px;
+    }
 }

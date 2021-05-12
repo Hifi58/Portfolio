@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logo.gif" />
-    <title>Tony Gillet -- Dev</title>
+    <title>Push the button !</title>
 </head>
 <body>
     <div class="containerpush">
         <div class="wrapperpush">
-            <div class="textpush"><button class="push">PUSH</button></div>
+            <div class="textpush"><button class="push"><a class="push2" href="landing.php">PUSH</a></button></div>
         </div>
     </div>
 </body>
 </html>
+
