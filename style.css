@@ -1,0 +1,36 @@
+/*-------------
+
+Button
+
+-------------*/
+.containerpush {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerpush .wrapperpush {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerpush .wrapperpush .textpush {
+  position: relative;
+  top: 35%;
+}
+
+.containerpush .wrapperpush .push {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3em;
+}
+/*# sourceMappingURL=style.css.map */
