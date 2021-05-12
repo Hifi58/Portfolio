@@ -9,16 +9,64 @@
     <title>Tony Gillet</title>
 </head>
 <body>
-   <nav>
-       <div class="containernav"></div>
-       <ul class="wrappernav">
-       <img src="images/logo.gif" alt="logo"/>
-           <li class="boxnav"><a class="linknav" href="#home">Accueil</a></li>
-           <li class="boxnav"><a class="linknav" href="#about">À propos</a></li>
-           <li class="boxnav"><a class="linknav" href="#work">Projets</a></li>
-           <li class="boxnav"><a class="linknav" href="#skills">Compétences & Expériences</a></li>
-           <li class="boxnav"><a class="linknav" href="#contact">Contact</a></li>
-       </ul>
-   </nav>
+
+<!----------------------------------
+
+About
+
+----------------------------------->
+
+   <section class="about">
+        <div class="containerabout">
+            <div class="titleabout">
+                <h1 class="titletony">Tony Gillet,<br/> développeur Web / Web mobile Fullstack</h1>
+                <p class="titledescrip">Je m'appelle Tony Gillet, <br/>je suis actuellement en formation de développeur Web & Web mobile. </p>
+            </div>
+        </div>
+   </section>
+
+<!----------------------------------
+
+Work
+
+----------------------------------->
+
+   <section class="work">
+        <div class="containerwork">
+            <div class="titlework">
+                <h1 class="titleproject">Les projets que j'ai réalisé</h1>
+            </div>
+        </div>
+   </section>
+
+<!----------------------------------
+
+Skills
+
+----------------------------------->
+
+   <section class="skills">
+        <div class="containerskills">
+            <div class="titleskills">
+                <h1 class="titlescomp">Mes compétences</h1>
+            </div>
+        </div>
+   </section>
+
+
+<!----------------------------------
+
+Contact
+
+----------------------------------->
+
+   <section class="contact">
+        <div class="containercontact">
+            <div class="titlecontact">
+                <h1 class="titleform">formulaire contact</h1>
+            </div>
+        </div>
+   </section>
+
 </body>
 </html>

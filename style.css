@@ -4,7 +4,8 @@ Var & font
 
 -------------*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 /*-------------
 
 Page parameters
@@ -15,8 +16,26 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
   background-color: #222222;
-  font-family: "Playfair Display", serif;
+}
+
+body h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 2em;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #EFE9F4;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #222222;
 }
 
 /*-------------
@@ -100,38 +119,201 @@ Button
 
 /*-------------
 
-Navigation
+ABOUT
 
 -------------*/
-nav {
+.about {
+  color: #EFE9F4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
 }
 
-nav .wrappernav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #EFE9F4;
-}
-
-nav .wrappernav .boxnav {
-  list-style-type: none;
+.about .containerabout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-nav .wrappernav .boxnav .linknav {
-  text-decoration: none;
-  color: #222222;
+.about .titleabout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
 }
 
-nav img {
-  width: 100px;
-  height: 100px;
+.about .titleabout .titletony {
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 3px;
+  font-size: 2em;
+  -webkit-animation: h1tony 2s ease-in-out 1ms 1 normal forwards;
+          animation: h1tony 2s ease-in-out 1ms 1 normal forwards;
+}
+
+@-webkit-keyframes h1tony {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes h1tony {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.about .titleabout .titledescrip {
+  letter-spacing: 2px;
+  line-height: 2;
+  word-spacing: 2;
+  -webkit-animation: pdescirp 2s ease-in-out 1ms 1 normal forwards;
+          animation: pdescirp 2s ease-in-out 1ms 1 normal forwards;
+}
+
+@-webkit-keyframes pdescirp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes pdescirp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+/*-------------
+
+Work
+
+-------------*/
+.work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  color: #EFE9F4;
+}
+
+.work .containerwork {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work .containerwork .titlework {
+  margin: auto;
+}
+
+.work .containerwork .titlework .titleproject {
+  letter-spacing: 3px;
+}
+
+/*-------------
+
+Skills
+
+-------------*/
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  color: #EFE9F4;
+}
+
+.skills .containerskills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills .containerskills .titleskills {
+  margin: auto;
+}
+
+.skills .containerskills .titleskills .titlecomp {
+  letter-spacing: 3px;
+}
+
+/*-------------
+
+Contact
+
+-------------*/
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  color: #EFE9F4;
+}
+
+.contact .containercontact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .containercontact .titlecontact {
+  margin: auto;
+}
+
+.contact .containercontact .titlecontact .titleform {
+  letter-spacing: 3px;
 }
 /*# sourceMappingURL=style.css.map */

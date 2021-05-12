@@ -4,7 +4,8 @@ Var & font
 
 -------------*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 
 $background-color: #222222;
@@ -12,7 +13,9 @@ $button-color: #E9190F;
 $textbut-color: #EFE9F4;
 $nav-color: #EFE9F4;
 $font-button: 'Rubik', sans-serif;
-$font-body: 'Playfair Display', serif;
+$font-body: 'Montserrat', sans-serif;
+$font-h1:'Permanent Marker', cursive;
+$h1-size: 2em;
 
 /*-------------
 
@@ -24,9 +27,25 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: $background-color;
     font-family: $font-body;
+    background-color: $background-color;
+
+    h1{
+        font-family: $font-h1;
+        font-size: $h1-size;
+    }
 }
+
+body::-webkit-scrollbar{
+    width: 0.8rem;
+    }
+    body::-webkit-scrollbar-thumb{
+    background-color: $textbut-color;
+    border-radius: 20px;
+    }
+    body::-webkit-scrollbar-track{
+    background-color: $background-color;
+    }
 
 /*-------------
 
@@ -89,32 +108,141 @@ Button
 
 /*-------------
 
-Navigation
+ABOUT
 
 -------------*/
 
-nav{
+.about{
+    color: $textbut-color;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    min-height: 100vh;
     
-    .wrappernav{
+    .containerabout{
         display: flex;
-        background-color: $nav-color;
+    }    
+    .titleabout{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
 
-        .boxnav{
-            list-style-type: none;
-            display: flex;
-         
+        .titletony{
+            font-family: $font-h1;
+            letter-spacing: 3px;
+            font-size: 2em;
+            animation: h1tony 2s ease-in-out 1ms 1 normal forwards;
+        }
 
-            .linknav{
-                text-decoration: none;
-                color: $background-color;
+        @keyframes h1tony {
+            0% {
+              opacity: 0;
+              transform: translateX(-250px);
+            }
+          
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+
+        .titledescrip{
+            letter-spacing: 2px;
+            line-height: 2;
+            word-spacing: 2;
+            animation: pdescirp 2s ease-in-out 1ms 1 normal forwards;
+        }
+
+        @keyframes pdescirp {
+            0% {
+              opacity: 0;
+              transform: translateX(250px);
+            }
+          
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+    }
+}
+
+/*-------------
+
+Work
+
+-------------*/
+
+.work{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    color: $textbut-color;
+
+    .containerwork{
+        display: flex;
+        justify-content: center;
+
+        .titlework{
+            margin: auto;
+        
+            .titleproject{
+                letter-spacing: 3px; 
+                
             }
         }
     }
+}
 
-    img{
-        width: 100px;
-        height: 100px;
+/*-------------
+
+Skills
+
+-------------*/
+
+.skills{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    color: $textbut-color;
+
+    .containerskills{
+        display: flex;
+        justify-content: center;
+
+        .titleskills{
+            margin: auto;
+        
+            .titlecomp{
+                letter-spacing: 3px; 
+                
+            }
+        }
+    }
+}
+
+/*-------------
+
+Contact
+
+-------------*/
+
+.contact{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    color: $textbut-color;
+
+    .containercontact{
+        display: flex;
+        justify-content: center;
+
+        .titlecontact{
+            margin: auto;
+        
+            .titleform{
+                letter-spacing: 3px; 
+                
+            }
+        }
     }
 }
