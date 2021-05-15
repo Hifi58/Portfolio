@@ -5,16 +5,16 @@ Var & font
 -------------*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
 
-$background-color: #222222;
+$background-color: #090113;
 $button-color: #E9190F;
 $textbut-color: #EFE9F4;
 $nav-color: #EFE9F4;
 $font-button: 'Rubik', sans-serif;
 $font-body: 'Montserrat', sans-serif;
-$font-h1:'Permanent Marker', cursive;
+$font-h1:'Lora', serif;
 $h1-size: 2em;
 
 /*-------------
@@ -33,78 +33,223 @@ body{
     h1{
         font-family: $font-h1;
         font-size: $h1-size;
+        color: $textbut-color;
     }
 }
 
-body::-webkit-scrollbar{
-    width: 0.8rem;
-    }
-    body::-webkit-scrollbar-thumb{
-    background-color: $textbut-color;
-    border-radius: 20px;
-    }
-    body::-webkit-scrollbar-track{
-    background-color: $background-color;
-    }
-
-/*-------------
-
-Button
-
--------------*/
-
-.containerpush{
-    display: flex;
-    justify-content: center;
-    perspective: 427px;
-
-    .wrapperpush{
-        justify-content: center;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background-color: $button-color;
-        display: flex;
-        transform: rotateX(65deg) rotateY(0deg);
-        transform-style: preserve-3d;
-        margin-top: 250px;
-        box-shadow: 0px 12px 0px 0px #9c0f07, 5px 12px 34px 18px #000;
-
-
-        
-
-        .textpush{
-            position: relative;
-            top: 35%;
-        }
-
-        .push{
-            background: none;
-            border:none;
-            font-size: 3em;
-            font-family: $font-button;
-            animation: pushbutton 2s ease 0s infinite normal forwards;
-
-            .push2{
-                text-decoration: none;
-                color: $textbut-color;
-            }
-        }
-
-        @keyframes pushbutton {
-            0%,
-            50%,
-            100% {
-              opacity: 1;
-            }
-          
-            25%,
-            75% {
-              opacity: 0;
-            }
-          }
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
     }
 }
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #0c0113;
+    overflow: hidden;
+}
+
+.background span {
+    width: 1vmin;
+    height: 1vmin;
+    border-radius: 1vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 34;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: #ba2626;
+    top: 31%;
+    left: 44%;
+    animation-duration: 123s;
+    animation-delay: -21s;
+    transform-origin: 21vw -15vh;
+    box-shadow: -2vmin 0 0.4503319155163239vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: #3744a4;
+    top: 23%;
+    left: 80%;
+    animation-duration: 42s;
+    animation-delay: -146s;
+    transform-origin: -11vw 10vh;
+    box-shadow: 2vmin 0 0.4657685468386188vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: #3744a4;
+    top: 27%;
+    left: 18%;
+    animation-duration: 144s;
+    animation-delay: -146s;
+    transform-origin: -10vw 12vh;
+    box-shadow: 2vmin 0 0.2558112106418544vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: #3744a4;
+    top: 44%;
+    left: 98%;
+    animation-duration: 165s;
+    animation-delay: -109s;
+    transform-origin: 23vw -24vh;
+    box-shadow: -2vmin 0 0.574682551383445vmin currentColor;
+}
+.background span:nth-child(4) {
+    color: #ba2626;
+    top: 52%;
+    left: 36%;
+    animation-duration: 97s;
+    animation-delay: -97s;
+    transform-origin: 1vw -12vh;
+    box-shadow: -2vmin 0 0.4270894450783018vmin currentColor;
+}
+.background span:nth-child(5) {
+    color: #3744a4;
+    top: 98%;
+    left: 3%;
+    animation-duration: 131s;
+    animation-delay: -73s;
+    transform-origin: -23vw -23vh;
+    box-shadow: -2vmin 0 0.4176517899845775vmin currentColor;
+}
+.background span:nth-child(6) {
+    color: #ba7d26;
+    top: 36%;
+    left: 34%;
+    animation-duration: 13s;
+    animation-delay: -138s;
+    transform-origin: 23vw -14vh;
+    box-shadow: 2vmin 0 0.5825560834705383vmin currentColor;
+}
+.background span:nth-child(7) {
+    color: #3744a4;
+    top: 97%;
+    left: 100%;
+    animation-duration: 69s;
+    animation-delay: -71s;
+    transform-origin: 6vw 7vh;
+    box-shadow: -2vmin 0 0.9619836275840221vmin currentColor;
+}
+.background span:nth-child(8) {
+    color: #3744a4;
+    top: 61%;
+    left: 2%;
+    animation-duration: 100s;
+    animation-delay: -31s;
+    transform-origin: -11vw 8vh;
+    box-shadow: 2vmin 0 0.965108433274728vmin currentColor;
+}
+.background span:nth-child(9) {
+    color: #ba7d26;
+    top: 7%;
+    left: 89%;
+    animation-duration: 120s;
+    animation-delay: -38s;
+    transform-origin: -22vw -21vh;
+    box-shadow: 2vmin 0 0.7338080999346759vmin currentColor;
+}
+.background span:nth-child(10) {
+    color: #ba2626;
+    top: 34%;
+    left: 57%;
+    animation-duration: 31s;
+    animation-delay: -66s;
+    transform-origin: 24vw 8vh;
+    box-shadow: -2vmin 0 0.5852922255797925vmin currentColor;
+}
+.background span:nth-child(11) {
+    color: #ba7d26;
+    top: 41%;
+    left: 63%;
+    animation-duration: 10s;
+    animation-delay: -47s;
+    transform-origin: 9vw -3vh;
+    box-shadow: -2vmin 0 1.1395932611291892vmin currentColor;
+}
+.background span:nth-child(12) {
+    color: #3744a4;
+    top: 98%;
+    left: 51%;
+    animation-duration: 148s;
+    animation-delay: -81s;
+    transform-origin: -8vw 9vh;
+    box-shadow: 2vmin 0 0.4780126540589791vmin currentColor;
+}
+.background span:nth-child(13) {
+    color: #ba2626;
+    top: 30%;
+    left: 33%;
+    animation-duration: 28s;
+    animation-delay: -127s;
+    transform-origin: -21vw -24vh;
+    box-shadow: -2vmin 0 0.2886027239772897vmin currentColor;
+}
+.background span:nth-child(14) {
+    color: #ba2626;
+    top: 1%;
+    left: 19%;
+    animation-duration: 26s;
+    animation-delay: -44s;
+    transform-origin: -23vw 4vh;
+    box-shadow: 2vmin 0 0.9145449697942725vmin currentColor;
+}
+.background span:nth-child(15) {
+    color: #ba2626;
+    top: 88%;
+    left: 87%;
+    animation-duration: 90s;
+    animation-delay: -88s;
+    transform-origin: -5vw 22vh;
+    box-shadow: 2vmin 0 1.2436765964607026vmin currentColor;
+}
+.background span:nth-child(16) {
+    color: #3744a4;
+    top: 30%;
+    left: 23%;
+    animation-duration: 82s;
+    animation-delay: -91s;
+    transform-origin: -20vw -12vh;
+    box-shadow: 2vmin 0 1.2144331488137112vmin currentColor;
+}
+.background span:nth-child(17) {
+    color: #ba2626;
+    top: 85%;
+    left: 76%;
+    animation-duration: 66s;
+    animation-delay: -137s;
+    transform-origin: -16vw 21vh;
+    box-shadow: 2vmin 0 0.2596175380885444vmin currentColor;
+}
+.background span:nth-child(18) {
+    color: #3744a4;
+    top: 62%;
+    left: 79%;
+    animation-duration: 79s;
+    animation-delay: -29s;
+    transform-origin: -2vw -11vh;
+    box-shadow: -2vmin 0 0.942683399431737vmin currentColor;
+}
+.background span:nth-child(19) {
+    color: #ba7d26;
+    top: 90%;
+    left: 42%;
+    animation-duration: 163s;
+    animation-delay: -96s;
+    transform-origin: -14vw -7vh;
+    box-shadow: 2vmin 0 0.3893865711062645vmin currentColor;
+}
+
+
+    
+
 
 /*-------------
 
@@ -123,6 +268,7 @@ ABOUT
     }    
     .titleabout{
         display: flex;
+        align-items: center;
         flex-direction: column;
         margin: auto;
 
@@ -130,8 +276,29 @@ ABOUT
             font-family: $font-h1;
             letter-spacing: 3px;
             font-size: 2em;
-            animation: h1tony 2s ease-in-out 1ms 1 normal forwards;
+            animation: h1tony 2s ease-in-out 0s 1 normal forwards;
         }
+
+        .pic{
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            background-image: url(images/moi.gif);
+            background-size: cover;
+            animation: pic 5s ease 0s 1 normal forwards;
+        }
+
+        @keyframes pic {
+            0% {
+              opacity: 0;
+            }
+          
+            100% {
+              opacity: 1;
+            }
+          }
 
         @keyframes h1tony {
             0% {
@@ -149,7 +316,7 @@ ABOUT
             letter-spacing: 2px;
             line-height: 2;
             word-spacing: 2;
-            animation: pdescirp 2s ease-in-out 1ms 1 normal forwards;
+            animation: pdescirp 2s ease-in-out 0s 1 normal forwards;
         }
 
         @keyframes pdescirp {
@@ -176,7 +343,6 @@ Work
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    color: $textbut-color;
 
     .containerwork{
         display: flex;
@@ -203,7 +369,7 @@ Skills
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    color: $textbut-color;
+
 
     .containerskills{
         display: flex;
