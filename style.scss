@@ -29,6 +29,7 @@ body{
     box-sizing: border-box;
     font-family: $font-body;
     background-color: $background-color;
+    cursor: url('images/icones/cursor.png'), auto;
 
     h1{
         font-family: $font-h1;
@@ -41,6 +42,15 @@ body{
         scroll-snap-type: y mandatory;
     }
 
+    input:hover,
+        textarea:hover,
+        button:hover,
+        a:hover{
+            cursor: url('images/icones/cursor.png'), auto;
+
+        }
+
+    
    
 }
 
@@ -58,10 +68,10 @@ body{
     border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #a1a1a1;
+    background: $button-color;
 }
 ::-webkit-scrollbar-thumb:active {
-    background: #a3a3a3;
+    background: $button-color;
 }
 ::-webkit-scrollbar-track {
     background: #0c0113;
@@ -200,6 +210,7 @@ Work
     .card{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         margin-top: 40px;
         margin-right: 40px;
         padding: 20px;
@@ -215,24 +226,35 @@ Work
     }
 
         button{
-            background: rgba( 255, 255, 255, 0.30 );
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-            backdrop-filter: blur( 4.5px );
-            -webkit-backdrop-filter: blur( 4.5px );
-            border-radius: 20px;
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            background: rgba( 255, 255, 255, 0.10 );
+            backdrop-filter: blur( 18.0px );
+            -webkit-backdrop-filter: blur( 18.0px );
+            border-radius: 10px;
             height: 40px;
             border: none;
+            margin-top: 40px;
+            font: $font-h1;
+            letter-spacing: 3px;
+            font-size: 1.5em;
+            color: $textbut-color;
+        }
 
+      
             a{
                 text-decoration: none;
-                color: $background-color;
+                color: $textbut-color;
+                font-family: $font-h1;
+                font-size: 1em;
+            }
+
+            button:hover{
+                background-color: rgba(8, 214, 94, 0.678)
             }
         }
     }
 
    
-}
+
 /*-------------
 
 Skills
@@ -299,22 +321,66 @@ Contact
     .containercontact{
         display: flex;
         justify-content: center;
+        margin-top: 40px;
+        margin-right: 40px;
+        padding: 20px;
+        background: rgba( 255, 255, 255, 0.10 );
+        backdrop-filter: blur( 18.0px );
+        -webkit-backdrop-filter: blur( 18.0px );
+        border-radius: 10px;
+        height: 500px;
+        width: 30%;
+        position: relative;
+        margin: auto;
 
         .titlecontact{
             margin: auto;
-        
-            .titlecontact{
-                letter-spacing: 3px; 
-                
-                
-                  
+            letter-spacing: 3px;  
                 }
             }
         }
-    }
+    form{
+        display: flex;
+        flex-direction: column;
     
-    input{
-        background-color: transparent;
-        color: $textbut-color;
+        input,
+        textarea{
+            background-color: transparent;
+            color: $textbut-color;
+            margin-top: 40px;
+            border: none;
+            border-bottom: $background-color 1px solid;
+            font-family: $font-body;
+            resize: none;
 
+        }
+
+        
+
+        input:focus,
+        textarea:focus{
+            outline: none;
+
+        }
+        
+        button{
+            background: rgba( 255, 255, 255, 0.10 );
+            backdrop-filter: blur( 18.0px );
+            -webkit-backdrop-filter: blur( 18.0px );
+            border-radius: 10px;
+            height: 40px;
+            border: none;
+            margin-top: 40px;
+            cursor: pointer;
+            font-family: $font-h1;
+            letter-spacing: 3px;
+            font-size: 1.5em;
+            color: $textbut-color;
+        }
+
+        button:hover{
+            background-color: rgba(8, 214, 94, 0.678)
+        }
+
+        
     }

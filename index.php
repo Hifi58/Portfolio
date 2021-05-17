@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="icon" href="images/logo.gif" /> -->
+    <link rel="icon" href="images/icones/logo.gif" />
     <title>Tony Gillet</title>
 </head>
 <body>
@@ -94,7 +94,7 @@ Contact
 
                 <input type="text" placeholder="Votre nom"><br/>
                 <input type="text" placeholder="Votre E-mail"><br/>
-                <input class="message" type="text" placeholder="Écrivez votre message ici..." size="50"><br>
+                <textarea class="message" type="text" size="50" rows="3" cols="40" placeholder="Écrivez votre texte ici..."></textarea><br>
                 <button type="submit" value="envoyer">Envoyer</button>
                 </form>
             </div>
