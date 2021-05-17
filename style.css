@@ -433,6 +433,7 @@ form textarea {
   border-bottom: #0c0113 1px solid;
   font-family: "Montserrat", sans-serif;
   resize: none;
+  width: 100%;
 }
 
 form input:focus,
@@ -457,5 +458,34 @@ form button {
 
 form button:hover {
   background-color: rgba(8, 214, 94, 0.678);
+}
+
+@media screen and (max-width: 1081px) {
+  .about,
+  .skills,
+  .work,
+  .contact {
+    background: none;
+  }
+}
+
+@media screen and (max-width: 823px) {
+  .imgskills img {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  .containercontact form {
+    display: inline-block;
+    text-align: center;
+  }
+  .containercontact form .titleform {
+    font-size: 1em;
+  }
+  .containercontact input,
+  .containercontact textarea {
+    margin-top: 40px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
