@@ -40,6 +40,42 @@ body{
     section{
         scroll-snap-type: y mandatory;
     }
+
+   
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background: #0c0113;
+    border: 31px none #0c0113;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #a3a3a3;
+}
+::-webkit-scrollbar-track {
+    background: #0c0113;
+    border: 1px solid #0c0113;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track:hover {
+    background: #f2f2f2;
+}
+::-webkit-scrollbar-track:active {
+    background: #f5f5f5;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
 }
 
 
@@ -55,6 +91,8 @@ ABOUT
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    background-image: url(images/section1.svg);
+    background-size: contain;
     
     .containerabout{
         display: flex;
@@ -136,6 +174,8 @@ Work
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    background-image: url(images/section2.svg);
+    background-size: contain;
 
     .containerwork{
         display: flex;
@@ -146,12 +186,53 @@ Work
         
             .titleproject{
                 letter-spacing: 3px; 
+                text-align: center;
                 
             }
         }
     }
 }
 
+.containercard{
+    display: flex;
+    flex-wrap: wrap;
+   
+    .card{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-right: 40px;
+        padding: 20px;
+        background: rgba( 255, 255, 255, 0.10 );
+        backdrop-filter: blur( 18.0px );
+        -webkit-backdrop-filter: blur( 18.0px );
+        border-radius: 10px;
+
+        .imgwork{
+            width: 300px;
+            height: 198px;
+            margin-bottom: 20px;
+    }
+
+        button{
+            background: rgba( 255, 255, 255, 0.30 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 4.5px );
+            -webkit-backdrop-filter: blur( 4.5px );
+            border-radius: 20px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            height: 40px;
+            border: none;
+
+            a{
+                text-decoration: none;
+                color: $background-color;
+            }
+        }
+    }
+
+   
+}
 /*-------------
 
 Skills
@@ -162,7 +243,8 @@ Skills
     display: flex;
     justify-content: center;
     min-height: 100vh;
-
+    background-image: url(images/section4.svg);
+    background-size: contain;
 
 
     .containerskills{
@@ -183,13 +265,14 @@ Skills
             }
             .imgskills{
                 display: flex;
-            
+                flex-wrap: wrap;
             }
             img{
                 width: 150px;
                 height: 150px;
                 margin-left: 40px;
                 opacity: 0.5;
+               
             }
 
             img:hover{
@@ -210,6 +293,8 @@ Contact
     justify-content: center;
     min-height: 100vh;
     color: $textbut-color;
+    background-image: url(images/section3.svg);
+    background-size: contain;
 
     .containercontact{
         display: flex;

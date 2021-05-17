@@ -18,7 +18,7 @@ About
 
 ----------------------------------->
 
-   <section class="about" >
+   <section class="about" id="section">
         <div class="containerabout">
             <div class="titleabout">
                 <h1 class="titletony">Tony Gillet,<br/> développeur Web / Web mobile Fullstack</h1>
@@ -37,10 +37,20 @@ Work
 
 ----------------------------------->
 
-   <section class="work" >
-        <div class="containerwork">
+   <section class="work" id="section1" >
+        <div class="containerwork" data-aos="zoom-in">
             <div class="titlework">
                 <h1 class="titleproject">Les projets que j'ai réalisé</h1>
+                <div class="containercard">
+                    <div class="card">
+                    <img class="imgwork"src="images/screenreunion.png">
+                        <button><a href="https://tonyg.promo-72.codeur.online/La%20R%C3%A9union/index.html">Visiter</a></button>
+                    </div>
+                    <div class="card">
+                    <img class="imgwork"src="images/screendash.png">
+                        <button><a href="https://tonyg.promo-72.codeur.online/Dashboard/">Visiter</a></button>
+                    </div>
+                </div>
             </div>
         </div>
    </section>
@@ -51,7 +61,7 @@ Skills
 
 ----------------------------------->
 
-   <section class="skills">
+   <section class="skills" id="section2">
         <div class="containerskills" data-aos="zoom-in">
             <div class="titleskills">
                 <h1 class="titlescomp">Mes compétences</h1>
@@ -75,7 +85,7 @@ Contact
 
 ----------------------------------->
 
-   <section class="contact" >
+   <section class="contact" id="section3">
         <div class="containercontact">
             <div class="titlecontact" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-offset="300">
                 <h1 class="titleform">Me contacter</h1>
