@@ -58,16 +58,20 @@ Work
                 <h1 class="titleproject">Les projets que j'ai réalisé</h1>
                 <div class="containercard">
                     <div class="card">
+                        <div class="movimg">
                     <img class="imgwork"src="images/screenreunion.png">
+                         </div>
                          <div class="content">
-                            <p>Projet sur le département de la Réunion,<br> incluant les lieux importants et des informations fictives. en html et css</p>
+                            <p>Projet sur le département de la Réunion,<br> incluant les lieux importants et<br>  des informations fictives.<br> en html et css</p>
                             <button><a href="https://tonyg.promo-72.codeur.online/La%20R%C3%A9union/index.html">Visiter</a></button>
                         </div>
                     </div>
                     <div class="card">
+                    <div class="movimg">
                     <img class="imgwork"src="images/screendash.png">
+                    </div>
                         <div class="content">
-                            <p>Projet sur la création d'un dashboard comptabilisant des ampoules,<br> avec un système de session unique en php et mysql.</p>
+                            <p>Projet sur la création d'un dashboard,   <br> comptabilisant des ampoules.<br>Système de session unique<br> en php et mysql.</p>
                             <button><a href="https://tonyg.promo-72.codeur.online/Dashboard/">Visiter</a></button>
                         </div>
                     </div>
