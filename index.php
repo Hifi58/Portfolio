@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="icon" href="images/icones/logo.gif" />
     <title>Tony Gillet</title>
 </head>
@@ -55,7 +56,7 @@ Work
    <section class="work" id="section1" >
         <div class="containerwork" data-aos="zoom-in">
             <div class="titlework">
-                <h1 class="titleproject">Les projets que j'ai réalisé</h1>
+                <h1 class="titleproject">Mes projets</h1>
                 <div class="containercard">
                     <div class="card">
                         <div class="movimg">

@@ -1,35 +1,80 @@
 @media screen and (max-width: 1081px) {
-    .about,
-    .skills,
-    .work,
-    .contact {
+  .about,
+  .skills,
+  .work,
+  .contact {
+    background: none;
+  }
+
+  .containersocial {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 939px) {
+  .containercard {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (max-width: 823px) {
+  .containercontact {
+    form {
+      display: inline-block;
+      text-align: center;
+
+      .titleform {
+        font-size: 1em;
+      }
+    }
+
+    input,
+    textarea {
+      margin-top: 40px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .titletony,
+  .titlescomp,
+  .titleproject,
+  .titleform {
+    font-size: 1.5em;
+  }
+
+  .titletony {
+    text-align: center;
+  }
+
+  .titledescrip {
+    text-align: center;
+  }
+
+  .containercard {
+    margin: 0;
+  }
+
+  .containercard {
+    justify-content: center;
+    .card {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      margin-top: 40px;
+      margin-right: 0;
+      padding: 0;
       background: none;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-radius: 0px;
+      overflow: hidden;
     }
   }
-  
-  @media screen and (max-width: 823px) {
-    .imgskills {
-      img {
-        width: 30px;
-        height: 30px;
-        opacity: 1;
-      }
-    }
-  
+  .contact {
     .containercontact {
-      form {
-        display: inline-block;
-        text-align: center;
-  
-        .titleform {
-          font-size: 1em;
-        }
-      }
-  
-      input,
-      textarea {
-        margin-top: 40px;
-        width: 100%;
-      }
+      width: 100%;
     }
   }
+}

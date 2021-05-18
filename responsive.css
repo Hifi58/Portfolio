@@ -5,14 +5,18 @@
   .contact {
     background: none;
   }
+  .containersocial {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 939px) {
+  .containercard {
+    margin-left: 25%;
+  }
 }
 
 @media screen and (max-width: 823px) {
-  .imgskills img {
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-  }
   .containercontact form {
     display: inline-block;
     text-align: center;
@@ -23,6 +27,50 @@
   .containercontact input,
   .containercontact textarea {
     margin-top: 40px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .titletony,
+  .titlescomp,
+  .titleproject,
+  .titleform {
+    font-size: 1.5em;
+  }
+  .titletony {
+    text-align: center;
+  }
+  .titledescrip {
+    text-align: center;
+  }
+  .containercard {
+    margin: 0;
+  }
+  .containercard {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .containercard .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    margin-top: 40px;
+    margin-right: 0;
+    padding: 0;
+    background: none;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  .contact .containercontact {
     width: 100%;
   }
 }

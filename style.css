@@ -27,6 +27,7 @@ body h1 {
 body section {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
+  width: 100%;
 }
 
 body input:hover,
@@ -117,7 +118,6 @@ ABOUT
 .about .titleabout .titletony {
   font-family: "Lora", serif;
   letter-spacing: 3px;
-  font-size: 2em;
   -webkit-animation: h1tony 2s ease-in-out 0s 1 normal forwards;
           animation: h1tony 2s ease-in-out 0s 1 normal forwards;
 }
@@ -373,16 +373,13 @@ Skills
 }
 
 .skills .containerskills .titleskills .imgskills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .skills .containerskills .titleskills img {
-  width: 150px;
-  height: 150px;
+  width: 10%;
+  height: 10%;
   margin-left: 40px;
   opacity: 0.5;
 }
@@ -500,5 +497,21 @@ form button:hover {
 .wrappersocial .socialmedia:hover {
   -webkit-filter: brightness(147%);
           filter: brightness(147%);
+}
+
+::-webkit-input-placeholder {
+  color: #efe9f4;
+}
+
+:-ms-input-placeholder {
+  color: #efe9f4;
+}
+
+::-ms-input-placeholder {
+  color: #efe9f4;
+}
+
+::placeholder {
+  color: #efe9f4;
 }
 /*# sourceMappingURL=style.css.map */
