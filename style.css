@@ -24,7 +24,7 @@ body {
 body h1 {
   font-family: "Lora", serif;
   font-size: 2em;
-  color: #EFE9F4;
+  color: #efe9f4;
   letter-spacing: 3px;
 }
 
@@ -57,11 +57,11 @@ body a:hover {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #E9190F;
+  background: #e9190f;
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: #E9190F;
+  background: #e9190f;
 }
 
 ::-webkit-scrollbar-track {
@@ -88,7 +88,7 @@ ABOUT
 
 -------------*/
 .about {
-  color: #EFE9F4;
+  color: #efe9f4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,12 +298,12 @@ Work
   font: "Lora", serif;
   letter-spacing: 3px;
   font-size: 1.5em;
-  color: #EFE9F4;
+  color: #efe9f4;
 }
 
 .containercard .card a {
   text-decoration: none;
-  color: #EFE9F4;
+  color: #efe9f4;
   font-family: "Lora", serif;
   font-size: 1em;
 }
@@ -384,7 +384,7 @@ Contact
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100vh;
-  color: #EFE9F4;
+  color: #efe9f4;
   background-image: url(images/section3.svg);
   background-size: contain;
 }
@@ -427,7 +427,7 @@ form {
 form input,
 form textarea {
   background-color: transparent;
-  color: #EFE9F4;
+  color: #efe9f4;
   margin-top: 40px;
   border: none;
   border-bottom: #0c0113 1px solid;
@@ -453,7 +453,7 @@ form button {
   font-family: "Lora", serif;
   letter-spacing: 3px;
   font-size: 1.5em;
-  color: #EFE9F4;
+  color: #efe9f4;
 }
 
 form button:hover {
@@ -487,5 +487,29 @@ form button:hover {
     margin-top: 40px;
     width: 100%;
   }
+}
+
+.wrappersocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.wrappersocial .socialmedia {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.wrappersocial .socialmedia:hover {
+  -webkit-filter: brightness(147%);
+          filter: brightness(147%);
 }
 /*# sourceMappingURL=style.css.map */

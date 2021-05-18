@@ -11,6 +11,21 @@
 </head>
 <body>
 
+<!----------------------------------
+
+Header
+
+----------------------------------->
+
+    <header>
+        <div class ="containersocial">
+            <div class="wrappersocial">
+                <a href="https://www.linkedin.com/in/tony-gillet-5a035a1a8/"><img class="socialmedia" src="images/icones/linkedin.png"></a>
+                <a href="https://github.com/Hifi58"><img class="socialmedia" src="images/icones/github.png"></a>
+                <a href="#"><img class="socialmedia" src="images/icones/insta.png"></a>
+            </div>
+        </div>
+    </header>
 
 <!----------------------------------
 
@@ -44,11 +59,17 @@ Work
                 <div class="containercard">
                     <div class="card">
                     <img class="imgwork"src="images/screenreunion.png">
-                        <button><a href="https://tonyg.promo-72.codeur.online/La%20R%C3%A9union/index.html">Visiter</a></button>
+                         <div class="content">
+                            <p>Projet sur le département de la Réunion,<br> incluant les lieux importants et des informations fictives. en html et css</p>
+                            <button><a href="https://tonyg.promo-72.codeur.online/La%20R%C3%A9union/index.html">Visiter</a></button>
+                        </div>
                     </div>
                     <div class="card">
                     <img class="imgwork"src="images/screendash.png">
-                        <button><a href="https://tonyg.promo-72.codeur.online/Dashboard/">Visiter</a></button>
+                        <div class="content">
+                            <p>Projet sur la création d'un dashboard comptabilisant des ampoules,<br> avec un système de session unique en php et mysql.</p>
+                            <button><a href="https://tonyg.promo-72.codeur.online/Dashboard/">Visiter</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,6 +120,7 @@ Contact
                 </form>
             </div>
         </div>
+        
    </section>
 
   
