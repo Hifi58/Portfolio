@@ -1,15 +1,11 @@
 /*-------------
-
 Var & font 
-
 -------------*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
 /*-------------
-
 Page parameters
-
 -------------*/
 body {
   margin: 0;
@@ -83,9 +79,7 @@ body a:hover {
 }
 
 /*-------------
-
 ABOUT
-
 -------------*/
 .about {
   color: #efe9f4;
@@ -219,9 +213,7 @@ ABOUT
 }
 
 /*-------------
-
 Work
-
 -------------*/
 .work {
   display: -webkit-box;
@@ -343,9 +335,7 @@ Work
 }
 
 /*-------------
-
 Skills
-
 -------------*/
 .skills {
   display: -webkit-box;
@@ -402,9 +392,7 @@ Skills
 }
 
 /*-------------
-
 Contact
-
 -------------*/
 .contact {
   display: -webkit-box;
@@ -488,35 +476,6 @@ form button {
 
 form button:hover {
   background-color: rgba(8, 214, 94, 0.678);
-}
-
-@media screen and (max-width: 1081px) {
-  .about,
-  .skills,
-  .work,
-  .contact {
-    background: none;
-  }
-}
-
-@media screen and (max-width: 823px) {
-  .imgskills img {
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-  }
-  .containercontact form {
-    display: inline-block;
-    text-align: center;
-  }
-  .containercontact form .titleform {
-    font-size: 1em;
-  }
-  .containercontact input,
-  .containercontact textarea {
-    margin-top: 40px;
-    width: 100%;
-  }
 }
 
 .wrappersocial {

@@ -1,0 +1,35 @@
+@media screen and (max-width: 1081px) {
+    .about,
+    .skills,
+    .work,
+    .contact {
+      background: none;
+    }
+  }
+  
+  @media screen and (max-width: 823px) {
+    .imgskills {
+      img {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+      }
+    }
+  
+    .containercontact {
+      form {
+        display: inline-block;
+        text-align: center;
+  
+        .titleform {
+          font-size: 1em;
+        }
+      }
+  
+      input,
+      textarea {
+        margin-top: 40px;
+        width: 100%;
+      }
+    }
+  }

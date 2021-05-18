@@ -1,7 +1,5 @@
 /*-------------
-
 Var & font 
-
 -------------*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
@@ -17,9 +15,7 @@ $font-h1: "Lora", serif;
 $h1-size: 2em;
 
 /*-------------
-
 Page parameters
-
 -------------*/
 
 body {
@@ -84,9 +80,7 @@ body {
 }
 
 /*-------------
-
 ABOUT
-
 -------------*/
 
 .about {
@@ -168,9 +162,7 @@ ABOUT
 }
 
 /*-------------
-
 Work
-
 -------------*/
 
 .work {
@@ -265,9 +257,7 @@ Work
 }
 
 /*-------------
-
 Skills
-
 -------------*/
 
 .skills {
@@ -311,9 +301,7 @@ Skills
 }
 
 /*-------------
-
 Contact
-
 -------------*/
 
 .contact {
@@ -383,42 +371,6 @@ form {
 
   button:hover {
     background-color: rgba(8, 214, 94, 0.678);
-  }
-}
-
-@media screen and (max-width: 1081px) {
-  .about,
-  .skills,
-  .work,
-  .contact {
-    background: none;
-  }
-}
-
-@media screen and (max-width: 823px) {
-  .imgskills {
-    img {
-      width: 30px;
-      height: 30px;
-      opacity: 1;
-    }
-  }
-
-  .containercontact {
-    form {
-      display: inline-block;
-      text-align: center;
-
-      .titleform {
-        font-size: 1em;
-      }
-    }
-
-    input,
-    textarea {
-      margin-top: 40px;
-      width: 100%;
-    }
   }
 }
 
