@@ -116,11 +116,11 @@ Contact
             <div class="titlecontact" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-offset="300">
                 <h1 class="titleform">Me contacter</h1>
 
-                <form action="mailto:t.gillet@codeur.online" method="post">
+                <form action="mail.php" method="POST">
 
-                <input type="text" placeholder="Votre nom"><br/>
-                <input type="text" placeholder="Votre E-mail"><br/>
-                <textarea class="message" type="text" size="50" rows="3" cols="40" placeholder="Écrivez votre texte ici..."></textarea><br>
+                <input type="text" placeholder="Votre nom" name="name" required><br/>
+                <input type="text" placeholder="Votre E-mail" name="email" required><br/>
+                <textarea class="message" type="text" size="50" rows="3" cols="40" placeholder="Écrivez votre texte ici..." name="message" required></textarea><br>
                 <button type="submit" value="envoyer">Envoyer</button>
                 </form>
             </div>
