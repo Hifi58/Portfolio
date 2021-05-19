@@ -64,7 +64,7 @@ Work
                          </div>
                          <div class="content">
                             <p>Projet sur le département de la Réunion,<br> incluant les lieux importants et<br>  des informations fictives.<br> en html et css</p>
-                            <button><a href="https://tonyg.promo-72.codeur.online/La%20R%C3%A9union/index.html">Visiter</a></button>
+                            <button class="boutonwork"><a href="https://tonyg.promo-72.codeur.online/La%20R%C3%A9union/index.html">Visiter</a></button>
                         </div>
                     </div>
                     <div class="card">
@@ -72,8 +72,8 @@ Work
                     <img class="imgwork"src="images/screendash.png">
                     </div>
                         <div class="content">
-                            <p>Projet sur la création d'un dashboard,   <br> comptabilisant des ampoules.<br>Système de session unique<br> en php et mysql.</p>
-                            <button><a href="https://tonyg.promo-72.codeur.online/Dashboard/">Visiter</a></button>
+                            <p class="ampoules">Projet sur la création d'un dashboard,   <br> comptabilisant des ampoules.<br>Système de session unique<br> en php et mysql.</p>
+                            <button class="boutonwork"><a href="https://tonyg.promo-72.codeur.online/Dashboard/">Visiter</a></button>
                         </div>
                     </div>
                 </div>

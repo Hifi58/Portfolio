@@ -3,7 +3,7 @@ Var & font
 -------------*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 
 $background-color: #0c0113;
 $button-color: #e9190f;
@@ -11,7 +11,7 @@ $textbut-color: #efe9f4;
 $nav-color: #efe9f4;
 $font-button: "Rubik", sans-serif;
 $font-body: "Montserrat", sans-serif;
-$font-h1: "Lora", serif;
+$font-h1: 'Pattaya', sans-serif;
 $h1-size: 2em;
 
 /*-------------
@@ -31,6 +31,7 @@ body {
     font-size: $h1-size;
     color: $textbut-color;
     letter-spacing: 3px;
+    font-weight: lighter;
   }
 
   section {
@@ -286,8 +287,8 @@ Skills
         flex-wrap: wrap;
       }
       img {
-        width: 10%;
-        height: 10%;
+        width: 150px;
+        height: 150px;
         margin-left: 40px;
         opacity: 0.5;
       }
@@ -362,8 +363,8 @@ form {
     border: none;
     margin-top: 40px;
     cursor: pointer;
-    font-family: $font-h1;
-    letter-spacing: 3px;
+    font-family: $font-body;
+    letter-spacing: 2px;
     font-size: 1.5em;
     color: $textbut-color;
   }
@@ -395,4 +396,5 @@ margin-left: 20px;
 
 ::placeholder{
   color: $textbut-color;
+  font-size: 1.2em
 }
