@@ -285,13 +285,14 @@ Work
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 40px;
-  margin-right: 40px;
+  margin-right: 80px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  border-radius: 2000px;
+  border-radius: 20px;
   overflow: hidden;
+  border: 1px solid rgba(48, 6, 87, 0.205);
 }
 
 .containercard .card .movimg {
@@ -418,11 +419,12 @@ Contact
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  border-radius: 10px;
+  border-radius: 20px;
   height: 500px;
   width: 30%;
   position: relative;
   margin: auto;
+  border: 1px solid rgba(48, 6, 87, 0.205);
 }
 
 .contact .containercontact .titlecontact {
@@ -496,8 +498,7 @@ form button:hover {
 }
 
 .wrappersocial .socialmedia:hover {
-  -webkit-filter: brightness(147%);
-          filter: brightness(147%);
+  opacity: 0.6;
 }
 
 ::-webkit-input-placeholder {

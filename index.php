@@ -54,11 +54,11 @@ Work
 ----------------------------------->
 
    <section class="work" id="section1" >
-        <div class="containerwork" data-aos="zoom-in">
+        <div class="containerwork" >
             <div class="titlework">
                 <h1 class="titleproject">Mes projets</h1>
                 <div class="containercard">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in" data-aos-duration="2000">
                         <div class="movimg">
                     <img class="imgwork"src="images/screenreunion.png">
                          </div>
@@ -67,7 +67,7 @@ Work
                             <button class="boutonwork"><a href="https://tonyg.promo-72.codeur.online/La%20R%C3%A9union/index.html">Visiter</a></button>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="2000">
                     <div class="movimg">
                     <img class="imgwork"src="images/screendash.png">
                     </div>
@@ -88,7 +88,7 @@ Skills
 ----------------------------------->
 
    <section class="skills" id="section2">
-        <div class="containerskills" data-aos="zoom-in">
+        <div class="containerskills" data-aos="zoom-in" data-aos-duration="2000">
             <div class="titleskills">
                 <h1 class="titlescomp">Mes compétences</h1>
                 <div class="imgskills">
