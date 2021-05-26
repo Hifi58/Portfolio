@@ -1,5 +1,6 @@
 <?php
 require_once('connexion.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -13,20 +14,21 @@ require_once('connexion.php');
 </head>
 
 <body>
-
+<hr class="bg-secondary">
+<hr class="bg-secondary">
 <!-----------------------------
 
 Formulaire d'ajout
 
 ------------------------------>
 
-         <div class="container">
-             <h1>Page administrateur</h1>
+         <div class="container mt-4 pt-4 w-25">
+             <h2>Page administrateur</h2>
              <form action="insert.php" method="POST">
                <fieldset>
                  
-                 <div class="form-group">
-                   <input type="text" class="form-control "  placeholder="Nom du projet" name="nom_projet" required>
+                 <div class="form-group mt-3">
+                   <input type="text" class="form-control"  placeholder="Nom du projet" name="nom_projet" required>
                  </div>
                  
                  <div class="form-group">
@@ -45,12 +47,82 @@ Formulaire d'ajout
                    <input type="text" class="form-control "  placeholder="Url Github du projet" name="github" required>
                  </div>
 
-                 <button class="btn btn-primary" type="submit">Ajouter</button>
+                 <div class="form-check">
+                  <input class="form-check-input" type="radio" name="visible" value="oui">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Visible
+                  </label>
+                  </div>
+
+                  <div class="form-check">
+                  <input class="form-check-input" type="radio" name="visible" value="non" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Non visible
+                  </label>
+                  </div>
+
+                 <button class="btn btn-primary mt-2 mb-2" type="submit">Ajouter</button>
                </fieldset>
              </form>
          </div>
+<hr class="bg-secondary">
+<hr class="bg-secondary">
+<!-----------------------------
+
+Liste des projets avec modification et suppression
+
+------------------------------>
+<h2 class="container mt-4 w-25">Projet visible</h2>
+<?php
+$sql = "SELECT * FROM projets WHERE visible='oui' ORDER BY id_projet DESC";
+$rs = $bdd->prepare($sql);
+$rs->execute();
+
+while($data=$rs->fetch()){
+?>
+
+  <div class="container mt-5 w-50">
+    <div class="row">
+      <h5 class="card-title"><?php echo $data['nom_projet'];?></h5>
+      <button class="btn btn-warning ml-2">Modifier</button>
+      <button class="btn btn-danger ml-2"><?php echo "<a class='text-white' href= delete.php?id_projet=" . $data['id_projet'] . '>Supprimer</a>'?></button>
+      <input type="hidden" name="id_projet" value="<?php echo $id;?>">
+    </div>
+  </div>
 
 
+
+ <?php
+ //fermeture While
+};
+?>
+
+<h2 class="container mt-5  w-25">Projet non visible</h2>
+<?php
+$sql = "SELECT * FROM projets WHERE visible='non' ORDER BY id_projet DESC";
+$rs = $bdd->prepare($sql);
+$rs->execute();
+
+while($data=$rs->fetch()){
+?>
+
+  <div class="container mt-5 mb-4 w-50">
+    <div class="row">
+      <h5 class="card-title"><?php echo $data['nom_projet'];?></h5>
+      <button class="btn btn-warning ml-2">Modifier</button>
+      <button class="btn btn-danger ml-2"><?php echo "<a class='text-white' href= delete.php?id_projet=" . $data['id_projet'] . '>Supprimer</a>'?></button>
+      <input type="hidden" name="id_projet" value="<?php echo $id;?>">
+    </div>
+  </div>
+
+
+
+ <?php
+ //fermeture While
+};
+?>
+<hr class="bg-secondary">
+<hr class="bg-secondary">
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
