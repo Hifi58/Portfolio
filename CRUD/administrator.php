@@ -30,6 +30,14 @@ require_once('connexion.php');
                    <textarea class="form-control"  rows="3" name="bio" required></textarea>
                  </div>
 
+                 <div class="form-group">
+                   <input type="text" class="form-control "  placeholder="Url du projet" name="lien" required>
+                 </div>
+
+                 <div class="form-group">
+                   <input type="text" class="form-control "  placeholder="Url Github du projet" name="github" required>
+                 </div>
+
                  <button class="btn btn-primary" type="submit">Ajouter</button>
                </fieldset>
              </form>
