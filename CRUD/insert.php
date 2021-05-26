@@ -2,13 +2,17 @@
 
 require_once('connexion.php');
 
-$nom=htmlspecialchars($_POST['nom_projet']);
+$nom=addslashes(htmlspecialchars($_POST['nom_projet']));
 $image=htmlspecialchars($_POST['photo']);
-$description=htmlspecialchars($_POST['bio']);
+$description=addslashes(htmlspecialchars($_POST['bio']));
 
-$bdd->exec("INSERT INTO projets (nom_projet, photo, bio) VALUE('$nom','$image','$description')");
 
-echo "ok";
+$bdd->exec("INSERT INTO projets (nom_projet, photo, bio) VALUE('$nom','$image','$description') ");
+
+echo ("<script LANGUAGE='JavaScript'>
+window.alert('Ajout effectué');
+ window.location.href='administrator.php';
+ </script>");
 
 
 
