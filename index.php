@@ -1,3 +1,9 @@
+<?php
+
+require_once('connexion.php');
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -53,6 +59,12 @@ About
 Work
 
 ----------------------------------->
+
+<?php
+$sql = "SELECT * FROM projets ORDER BY id_projet DESC";
+$rs = $bdd->prepare($sql);
+$rs->execute();
+?>
 
    <section class="work" id="section1" >
         <div class="containerwork" >
