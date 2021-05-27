@@ -401,3 +401,19 @@ margin-left: 20px;
   color: $textbut-color;
   font-size: 1.2em
 }
+
+.admin{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background: rgba(219, 188, 11, 0.849);
+  border:none;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.lienadmin{
+  text-decoration: none;
+  color: $background-color;
+  cursor: pointer;
+}

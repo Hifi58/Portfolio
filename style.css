@@ -520,4 +520,20 @@ form button:hover {
   color: #efe9f4;
   font-size: 1.2em;
 }
+
+.admin {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background: rgba(219, 188, 11, 0.849);
+  border: none;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.lienadmin {
+  text-decoration: none;
+  color: #0c0113;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
