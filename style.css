@@ -217,13 +217,7 @@ ABOUT
 Work
 -------------*/
 .work {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-height: 100vh;
+  text-align: center;
   background-image: url(images/section2.svg);
   background-size: contain;
 }

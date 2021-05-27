@@ -59,39 +59,38 @@ About
 Work
 
 ----------------------------------->
-
+<section class="work" id="section1" > 
+    
+            <div class="titlework">
+                <h1 class="titleproject">Mes projets</h1> 
+            </div>
+    
 <?php
-$sql = "SELECT * FROM projets ORDER BY id_projet DESC";
+$sql = "SELECT * FROM projets WHERE visible='oui' ORDER BY id_projet DESC";
 $rs = $bdd->prepare($sql);
 $rs->execute();
+
+while($data=$rs->fetch()){
 ?>
 
-   <section class="work" id="section1" >
-        <div class="containerwork" >
-            <div class="titlework">
-                <h1 class="titleproject">Mes projets</h1>
+       <div class="containerwork" >
                 <div class="containercard">
                     <div class="card" data-aos="zoom-in" data-aos-duration="2000">
                         <div class="movimg">
-                    <img class="imgwork"src="images/screenreunion.png">
+                        <img class="imgwork" src='images/<?php echo $data['photo'];?>'>
                          </div>
                          <div class="content">
-                            <p>Projet sur le département de la Réunion,<br> incluant les lieux importants et<br>  des informations fictives.<br> en html et css</p>
-                            <button class="boutonwork"><a href="https://tonyg.promo-72.codeur.online/La%20R%C3%A9union/index.html">Visiter</a></button>
+                            <p><?php echo $data['bio'];?></p>
+                            <button class="boutonwork"><a href="<?php echo $data['lien'];?>">Visiter</a></button>
                         </div>
-                    </div>
-                    <div class="card" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="2000">
-                    <div class="movimg">
-                    <img class="imgwork"src="images/screendash.png">
-                    </div>
-                        <div class="content">
-                            <p class="ampoules">Projet sur la création d'un dashboard,   <br> comptabilisant des ampoules.<br>Système de session unique<br> en php et mysql.</p>
-                            <button class="boutonwork"><a href="https://tonyg.promo-72.codeur.online/Dashboard/">Visiter</a></button>
-                        </div>
-                    </div>
+</div>
+<?php
+};
+?>
+
+                    
                 </div>
-            </div>
-        </div>
+           </div>
    </section>
 
 <!----------------------------------
