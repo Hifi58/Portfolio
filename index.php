@@ -80,10 +80,10 @@ while($data=$rs->fetch()){
                         <img class="imgwork" src='images/<?php echo $data['photo'];?>'>
                          </div>
                          <div class="content">
-                            <p><?php echo $data['bio'];?></p>
+                            <p><?php echo $data['bio'];?><br></p>
                             <button class="boutonwork"><a href="<?php echo $data['lien'];?>">Visiter</a></button>
                         </div>
-</div>
+        </div>
 <?php
 };
 ?>

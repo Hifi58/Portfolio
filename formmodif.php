@@ -6,7 +6,14 @@ if(!isconnected()){
 exit(); 
 }
 require_once('connexion.php');
+
 $id = $_GET['id_projet'];
+$nom=addslashes(htmlspecialchars($_GET['nom_projet']));
+$image=htmlspecialchars($_GET['photo']);
+$description=addslashes(htmlspecialchars($_GET['bio']));
+$lien=addslashes(htmlspecialchars($_GET['lien']));
+$github=addslashes(htmlspecialchars($_GET['github']));
+
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +27,7 @@ $id = $_GET['id_projet'];
 </head>
 <body>
     
- 
+
     
     
     <div class="container mt-4 pt-4 w-25">
@@ -29,23 +36,23 @@ $id = $_GET['id_projet'];
                <fieldset>
                  
                  <div class="form-group mt-3">
-                   <input type="text" class="form-control"  placeholder="Nom du projet" name="nom_projet" required>
+                   <input type="text" class="form-control"  placeholder="Nom du projet" name="nom_projet" value="<?php echo $nom ?>" required>
                  </div>
                  
                  <div class="form-group">
-                   <input type="file" class="form-control" title ='image' name="photo" required>
+                   <input type="file" class="form-control" title ='image' name="photo" value="<?php echo $image ?>" required>
                  </div>
                  
                  <div class="form-group">
-                   <textarea class="form-control"  rows="3" name="bio" resize="none" required></textarea>
+                   <input  class="form-control pb-5"  rows="5" name="bio"  value="<?php echo $description ?>" required>
                  </div>
 
                  <div class="form-group">
-                   <input type="text" class="form-control "  placeholder="Url du projet" name="lien" required>
+                   <input type="text" class="form-control"  placeholder="Url du projet" name="lien" value="<?php echo $lien ?>"required>
                  </div>
 
                  <div class="form-group">
-                   <input type="text" class="form-control "  placeholder="Url Github du projet" name="github" required>
+                   <input type="text" class="form-control"  placeholder="Url Github du projet" name="github" value="<?php echo $github ?>" required>
                  </div>
 
                  <div class="form-check">
@@ -61,7 +68,7 @@ $id = $_GET['id_projet'];
                     Non visible
                   </label>
                   </div>
-                    <input type="hidden" name="id_projet" step="any" min="0" value="<?php echo $id ?>">
+                    <input type="hidden" name="id_projet" value="<?php echo $id ?>">
                  <button class="btn btn-primary mt-2 mb-2" type="submit">Modifier</button>
                </fieldset>
              </form>

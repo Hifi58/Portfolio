@@ -285,8 +285,9 @@ Work
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border-radius: 20px;
-  overflow: hidden;
   border: 1px solid rgba(48, 6, 87, 0.205);
+  width: 480px;
+  overflow: auto;
 }
 
 .containercard .card .movimg {
@@ -518,7 +519,7 @@ form button:hover {
 .admin {
   margin-left: 20px;
   margin-bottom: 20px;
-  background: rgba(219, 188, 11, 0.849);
+  background: rgba(235, 182, 10, 0.938);
   border: none;
   border-radius: 50%;
   height: 50px;
@@ -529,5 +530,7 @@ form button:hover {
   text-decoration: none;
   color: #0c0113;
   cursor: pointer;
+  font-family: "Pattaya", sans-serif;
+  font-size: 1.1em;
 }
 /*# sourceMappingURL=style.css.map */
