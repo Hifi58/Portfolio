@@ -91,7 +91,7 @@ while($data=$rs->fetch()){
     <div class="row">
       <h5 class="card-title"><?php echo $data['nom_projet'];?></h5>
       <button class="btn btn-warning ml-2"><?php echo "<a class='text-white' href= formmodif.php?id_projet=" . $data['id_projet'] . "&nom_projet=" . urlencode($data['nom_projet']) . "&photo=" . $data['photo'] . "&bio=" . urlencode($data['bio']) . "&lien=" . $data['lien'] . "&github=".$data['github'] . '>Modifier</a>'?></button>
-      <button class="btn btn-danger ml-2"><?php echo "<a class='text-white' href= delete.php?id_projet=" . $data['id_projet'] . '>Supprimer</a>'?></button>
+      <button class="btn btn-danger ml-2"><?php echo "<a class='text-white' href= formdelete.php?id_projet=" . $data['id_projet'] . '>Supprimer</a>'?></button>
       <input type="hidden" name="id_projet" value="<?php echo $id;?>">
     </div>
   </div>
@@ -116,7 +116,7 @@ while($data=$rs->fetch()){
     <div class="row">
       <h5 class="card-title"><?php echo $data['nom_projet'];?></h5>
       <button class="btn btn-warning ml-2"><?php echo "<a class='text-white' href= formmodif.php?id_projet=" . $data['id_projet'] . "&nom_projet=" . urlencode($data['nom_projet']) . "&photo=" . $data['photo'] . "&bio=" . urlencode($data['bio']) . "&lien=" . $data['lien'] . "&github=".$data['github'] . '>Modifier</a>'?></button>
-      <button class="btn btn-danger ml-2"><?php echo "<a class='text-white' href= delete.php?id_projet=" . $data['id_projet'] . '>Supprimer</a>'?></button>
+      <button class="btn btn-danger ml-2"><?php echo "<a class='text-white' href= formdelete.php?id_projet=" . $data['id_projet'] . '>Supprimer</a>'?></button>
       <input type="hidden" name="id_projet" value="<?php echo $id;?>">
     </div>
   </div>
