@@ -13,7 +13,7 @@ session_start();
 </head>
 <html>
     <body>
-        <div class="container mt-5 pt-5 w-25">
+        <div class="container mt-5 pt-5 w-50">
              <h2>Page administrateur</h2>
                 <form action="login.php" method="POST">
                 <fieldset>
@@ -30,7 +30,7 @@ session_start();
                </fieldset>
              </form>
          </div>
-<div class="container w-25">
+<div class="container w-50">
          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
   <a href="index.php"><path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/></a>
       </svg>

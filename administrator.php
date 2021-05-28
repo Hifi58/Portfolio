@@ -28,7 +28,7 @@ Formulaire d'ajout
 
 ------------------------------>
 
-         <div class="container mt-4 pt-4 w-25">
+         <div class="container mt-4 pt-4 w-50">
              <h2>Page administrateur</h2>
              <form action="insert.php" method="POST">
                <fieldset>
@@ -78,7 +78,7 @@ Formulaire d'ajout
 Liste des projets avec modification et suppression
 
 ------------------------------>
-<h2 class="container mt-4 w-25">Projet visible</h2>
+<h2 class="container mt-4 w-25">Projets visibles</h2>
 <?php
 $sql = "SELECT * FROM projets WHERE visible='oui' ORDER BY id_projet DESC";
 $rs = $bdd->prepare($sql);
@@ -103,7 +103,7 @@ while($data=$rs->fetch()){
 };
 ?>
 
-<h2 class="container mt-5  w-25">Projet non visible</h2>
+<h2 class="container mt-5  w-25">Projets non visibles</h2>
 <?php
 $sql = "SELECT * FROM projets WHERE visible='non' ORDER BY id_projet DESC";
 $rs = $bdd->prepare($sql);
