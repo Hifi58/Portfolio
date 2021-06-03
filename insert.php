@@ -17,6 +17,7 @@ $visible=htmlspecialchars($_POST['visible']);
 
 $bdd->exec("INSERT INTO projets (nom_projet, photo, bio, lien, github, visible) VALUE('$nom','$image','$description','$lien','$github', '$visible') ");
 
+
 echo ("<script LANGUAGE='JavaScript'>
 window.alert('Ajout effectué');
  window.location.href='administrator.php';

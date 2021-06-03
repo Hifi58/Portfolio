@@ -129,6 +129,20 @@ while($data=$rs->fetch()){
 ?>
 <hr class="bg-secondary">
 <hr class="bg-secondary">
+
+<div class="container mt-5 mb-4 w-50">
+<h2>Ajout d'images</h2>
+             <form action="ajout_images.php" enctype="multipart/form-data" method="POST">
+               <fieldset>
+
+                 <div class="form-group">
+                   <input type="file" class="form-control" name="image_photo" required>
+                 </div>
+
+                 <button class="btn btn-primary mt-2 mb-2" type="submit">Ajouter</button>
+               </fieldset>
+             </form>
+</div>
 <div>
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
     <a href="sign_out.php"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></a>

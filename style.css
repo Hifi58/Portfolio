@@ -534,4 +534,8 @@ form button:hover {
   font-family: "Pattaya", sans-serif;
   font-size: 1.1em;
 }
+
+input {
+  caret-color: #b4b2b6;
+}
 /*# sourceMappingURL=style.css.map */
